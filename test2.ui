@@ -14,25 +14,23 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(36, 0, 255, 255), stop:1 rgba(255, 255, 255, 255));
-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(204, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+   <string notr="true"/>
   </property>
   <widget class="QComboBox" name="comboBox">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>70</x>
      <y>40</y>
-     <width>171</width>
+     <width>211</width>
      <height>25</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: italic 11pt &quot;URW Bookman L&quot;;
-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(255, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+    <string notr="true">font: 11pt &quot;Sans&quot;;</string>
    </property>
    <item>
     <property name="text">
-     <string>ps</string>
+     <string>List all the processes</string>
     </property>
    </item>
    <item>
@@ -66,9 +64,7 @@ color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(255, 0, 0
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 255, 255, 255));
-font: 57 italic 18pt &quot;URW Chancery L&quot;;
-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(255, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string>Choose a command :</string>

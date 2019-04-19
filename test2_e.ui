@@ -14,7 +14,7 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(36, 0, 255, 255), stop:1 rgba(255, 255, 255, 255));</string>
+   <string notr="true"/>
   </property>
   <widget class="QPlainTextEdit" name="plainTextEdit">
    <property name="geometry">
@@ -26,9 +26,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(255, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
-font: 57 italic 13pt &quot;URW Chancery L&quot;;</string>
+    <string notr="true"/>
    </property>
    <property name="plainText">
     <string>1) SIGHUP	 2) SIGINT	 3) SIGQUIT
@@ -64,9 +62,7 @@ font: 57 italic 13pt &quot;URW Chancery L&quot;;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 57 italic 18pt &quot;URW Chancery L&quot;;
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(255, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string>Signal :</string>
@@ -82,9 +78,7 @@ color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(255, 0, 0
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 57 italic 18pt &quot;URW Chancery L&quot;;
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(255, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string>Choose the num of signal :</string>
@@ -100,9 +94,7 @@ color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(255, 0, 0
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 255, 255, 255));
-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(255, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
-font: 57 italic 18pt &quot;URW Chancery L&quot;;</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string>Enter the process name :</string>
@@ -118,9 +110,7 @@ font: 57 italic 18pt &quot;URW Chancery L&quot;;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 57 italic 18pt &quot;URW Chancery L&quot;;
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(255, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+    <string notr="true"/>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit">
@@ -133,9 +123,7 @@ color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(255, 0, 0
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(255, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
-font: 57 italic 13pt &quot;URW Chancery L&quot;;</string>
+    <string notr="true"/>
    </property>
   </widget>
   <widget class="QPushButton" name="goback">
@@ -148,7 +136,7 @@ font: 57 italic 13pt &quot;URW Chancery L&quot;;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(255, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string>Go back</string>
@@ -164,7 +152,7 @@ font: 57 italic 13pt &quot;URW Chancery L&quot;;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(255, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string>run</string>
