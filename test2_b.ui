@@ -93,17 +93,14 @@
     <string>All Process Runing in chosen user name  :</string>
    </property>
   </widget>
-  <widget class="QPlainTextEdit" name="plainTextEdit">
+  <widget class="QTextBrowser" name="textBrowser">
    <property name="geometry">
     <rect>
      <x>30</x>
      <y>30</y>
-     <width>591</width>
+     <width>581</width>
      <height>131</height>
     </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
    </property>
   </widget>
  </widget>

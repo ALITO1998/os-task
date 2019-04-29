@@ -16,42 +16,6 @@
   <property name="styleSheet">
    <string notr="true"/>
   </property>
-  <widget class="QPlainTextEdit" name="plainTextEdit">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>40</y>
-     <width>411</width>
-     <height>141</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="plainText">
-    <string>1) SIGHUP	 2) SIGINT	 3) SIGQUIT
-4) SIGILL  5) SIGTRAP 6) SIGABRT
-7) SIGBUS  8) SIGFPE  9) SIGKILL
-10) SIGUSR1  11) SIGSEGV   12) SIGUSR2
-13) SIGPIPE  14) SIGALRM  15) SIGTERM
-16) SIGSTKFLT  17) SIGCHLD  18) SIGCONT
-19) SIGSTOP  20) SIGTSTP  21) SIGTTIN
-22) SIGTTOU  23) SIGURG  24) SIGXCPU
-25) SIGXFSZ   26) SIGVTALRM  27) SIGPROF
-28) SIGWINCH  29) SIGIO  30) SIGPWR
-31) SIGSYS	 34) SIGRTMIN  35) SIGRTMIN+1
-36) SIGRTMIN+2  37) SIGRTMIN+3  38) SIGRTMIN+4
-39) SIGRTMIN+5  40) SIGRTMIN+6  41) SIGRTMIN+7
-42) SIGRTMIN+8  43) SIGRTMIN+9  44) SIGRTMIN+10
-45) SIGRTMIN+11  46) SIGRTMIN+12  47) SIGRTMIN+13
-48) SIGRTMIN+14  49) SIGRTMIN+15  50) SIGRTMAX-14
-51) SIGRTMAX-13  52) SIGRTMAX-12  53) SIGRTMAX-11
-54) SIGRTMAX-10  55) SIGRTMAX-9  56) SIGRTMAX-8
-57) SIGRTMAX-7  58) SIGRTMAX-6  59) SIGRTMAX-5
-60) SIGRTMAX-4  61) SIGRTMAX-3  62) SIGRTMAX-2
-63) SIGRTMAX-1  64) SIGRTMAX</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
@@ -156,6 +120,43 @@
    </property>
    <property name="text">
     <string>run</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>401</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1) SIGHUP	 2) SIGINT	 3) SIGQUIT&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4) SIGILL  5) SIGTRAP 6) SIGABRT&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;7) SIGBUS  8) SIGFPE  9) SIGKILL&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;10) SIGUSR1  11) SIGSEGV   12) SIGUSR2&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;13) SIGPIPE  14) SIGALRM  15) SIGTERM&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;16) SIGSTKFLT  17) SIGCHLD  18) SIGCONT&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;19) SIGSTOP  20) SIGTSTP  21) SIGTTIN&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;22) SIGTTOU  23) SIGURG  24) SIGXCPU&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;25) SIGXFSZ   26) SIGVTALRM  27) SIGPROF&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;28) SIGWINCH  29) SIGIO  30) SIGPWR&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;31) SIGSYS	 34) SIGRTMIN  35) SIGRTMIN+1&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;36) SIGRTMIN+2  37) SIGRTMIN+3  38) SIGRTMIN+4&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;39) SIGRTMIN+5  40) SIGRTMIN+6  41) SIGRTMIN+7&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;42) SIGRTMIN+8  43) SIGRTMIN+9  44) SIGRTMIN+10&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;45) SIGRTMIN+11  46) SIGRTMIN+12  47) SIGRTMIN+13&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;48) SIGRTMIN+14  49) SIGRTMIN+15  50) SIGRTMAX-14&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;51) SIGRTMAX-13  52) SIGRTMAX-12  53) SIGRTMAX-11&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;54) SIGRTMAX-10  55) SIGRTMAX-9  56) SIGRTMAX-8&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;57) SIGRTMAX-7  58) SIGRTMAX-6  59) SIGRTMAX-5&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;60) SIGRTMAX-4  61) SIGRTMAX-3  62) SIGRTMAX-2&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;63) SIGRTMAX-1  64) SIGRTMAX&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
  </widget>

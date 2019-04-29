@@ -1,7 +1,7 @@
 import os
 import sys
 from PyQt5.QtCore import pyqtSlot
-from PyQt5.QtWidgets import QApplication, QDialog
+from PyQt5.QtWidgets import QApplication, QDialog,QMainWindow
 from PyQt5.uic import loadUi
 import subprocess as sbp
 
@@ -10,6 +10,12 @@ class main(QDialog):
         super(main,self).__init__()
         loadUi('test2.ui',self)
         self.pushButton.clicked.connect(self.run)
+        self.toolButton.clicked.connect(self.help)
+
+
+    def help(self):
+        self.dialog = Help()
+        self.dialog.exec_()
         
 
     def run(self):
@@ -36,7 +42,7 @@ class fifth(QDialog):
             a = x.index("-VirtualBox")
             x = x[:a]
         result = os.popen("pgrep -u"+x+" -l").read()
-        self.plainTextEdit.insertPlainText(result)
+        self.textBrowser.append(result)
         self.pushButton.clicked.connect(self.go_back)
 
     def go_back(self):
@@ -58,6 +64,7 @@ class fuorth(QDialog):
         e = os.popen("pkill -9 "+a)
         f = open(os.devnull,'w')
         retcode = sbp.call(['pkill','-9',a],stdout=f,stderr=sbp.STDOUT)
+        print (retcode)
         if (retcode == 0):
             self.dialog = fuorth_r()
         else :
@@ -82,7 +89,7 @@ class socand(QDialog):
         super(socand,self).__init__()
         loadUi('test2_a_r.ui',self)
         result = os.popen("ps").read()
-        self.plainTextEdit.insertPlainText(result)
+        self.textBrowser.append(result)
         self.pushButton.clicked.connect(self.go_back)
 
 
@@ -97,7 +104,7 @@ class theard(QDialog):
         self.goback.clicked.connect(self.go_back)
         self.Run.clicked.connect(self.run)
         self.label_2.hide()
-        self.plainTextEdit.hide()
+        self.textBrowser.hide()
 
     def go_back(self):
         self.close()
@@ -109,11 +116,11 @@ class theard(QDialog):
         self.label.hide()
         self.textbox.hide()
         self.label_2.show()
-        self.plainTextEdit.show()
+        self.textBrowser.show()
         if (w == ''):
-            self.plainTextEdit.insertPlainText("error: user name does not exist")
+            self.textBrowser.append("error: user name does not exist")
         else :
-            self.plainTextEdit.insertPlainText(w)
+            self.textBrowser.append(w)
 
 
 class theard_r(QDialog):
@@ -140,7 +147,8 @@ class frist(QDialog):
         b = self.lineEdit.text()
         c = os.popen("pkill -"+str(a)+" "+b)
         f = open(os.devnull,'w')
-        retcode = sbp.call(['pkill',str(a),a],stdout=f,stderr=sbp.STDOUT)
+        retcode = sbp.call(['pkill','-'+str(a),b],stdout=f,stderr=sbp.STDOUT)
+        print(retcode)
         if (retcode == 0):
             self.dialog = fuorth_r()
         else :
@@ -151,6 +159,18 @@ class frist(QDialog):
     
     def go_back(self):
         self.close()
+
+
+class Help(QDialog):
+    def __init__(self):
+        super(Help,self).__init__()
+        loadUi('Help.ui',self)
+        self.btn.clicked.connect(self.go_back)
+
+    def go_back(self):
+        self.close()
+
+
 
 app = QApplication(sys.argv)
 widget = main()
